@@ -1,0 +1,95 @@
+/* General body styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e6ebf2;
+    margin: 0;
+    
+}
+
+/*for Calculator container styling */
+.calculator-container {
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #cbced1, -10px -10px 20px white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+}
+
+/*for Display styling */
+.calculator-display {
+    background-color: #f0f4f8;
+    box-shadow: inset 5px 5px 10px #cbced1, inset -5px -5px 10px white;
+    width: 90%;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    text-align: right;
+    font-size: 2rem;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* for Calculator buttons container */
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 100%;
+}
+
+/* for Buttons styling */
+.btn {
+    background-color: #f0f4f8;
+    box-shadow: 4px 4px 6px #cbced1, -4px -4px 6px white;
+    border-radius: 50%;
+    border: none;
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    color: rgb(102, 1, 1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.2s;
+}
+
+/* for Button hover and active effect on button */
+.btn:active {
+    box-shadow: inset 4px 4px 6px #cbced1, inset -4px -4px 6px white;
+}
+
+/* for styling of equals button */
+.equal {
+    grid-column: span 4;
+    background-color: #f0f4f8;
+    border-radius: 40px;
+    font-size: 2rem;
+    height: 60px; 
+    width: 98%; 
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    margin-top: 15px;
+}
+/* animation for buttons */
+button {
+    background-color: #6f4e37;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
